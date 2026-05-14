@@ -3,7 +3,7 @@ d {bf:GSHEET}: Import a public Google Sheet directly to Stata via Python Integra
 d
 d Use the Python Integration available in Stata 16+ to import a public
 d Google Sheet by URL. Google Sheet must be shared with public permissions, 
-d that is set to {bf:Anyone with the link can view}.
+d that is, the sheet sharing is set to "Anyone with the link can view".
 d 
 d Requires: Stata 16+ with functioning Python Integration, pandas and numpy Python packages
 d 
