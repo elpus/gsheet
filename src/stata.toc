@@ -1,0 +1,3 @@
+v 3.0.4
+d Kenneth Elpus, elpus@umd.edu
+p 'GSHEET': Import a Public Google Sheet directly into Stata 16+ via Python 
