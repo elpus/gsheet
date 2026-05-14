@@ -73,9 +73,9 @@ gsheet using "https://docs.google.com/spreadsheets/d/YOUR_SHEET_ID/...", [option
 
 ## Usage Examples
 
-**Basic import, replacing any current dataset:**
+**Basic import, use first row as variable names, replacing any current dataset:**
 ```stata
-gsheet using "https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit", clear
+gsheet using "https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit", firstrow clear
 ```
 
 **Import a specific named sheet with variable names from first row:**
@@ -84,7 +84,7 @@ gsheet using "https://docs.google.com/spreadsheets/d/1cvaIhXYhDh70rnUfAtyAhI7hlX
 
 ```
 
-**Limit to a cell range and save the result skipping blank columns and using first row as variable names:**
+**Limit to a cell range, save the result to dta, skip blank columns, and use first row as variable names:**
 ```stata
 gsheet using "https://docs.google.com/spreadsheets/d/1cvaIhXYhDh70rnUfAtyAhI7hlXhrLSCnLWqhL6UnioE/edit", sheet("Data countries etc by year") ///
  cellrange(A1:F500) firstrow lowercase noblankcols save("life_expectancy.dta") clear
