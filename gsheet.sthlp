@@ -1,5 +1,5 @@
 {smcl}
-{* *! version 3.0.4  10mar2026}{...}
+{* *! version 3.0.4  13may2026}{...}
 {vieweralsosee "[D] import" "help import"}{...}
 {viewerjumpto "Syntax" "gsheet##syntax"}{...}
 {viewerjumpto "Description" "gsheet##description"}{...}
