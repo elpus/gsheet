@@ -1,0 +1,18 @@
+v 3.0.4
+d
+d 'GSHEET': Import a public Google Sheet directly to Stata via Python Integration
+d
+d Use the Python Integration available in Stata 16+
+d to import a public Google Sheet by URL. Requires a 
+d functioning Python environment correctly setup for
+d integration with the pandas and numpy packages.
+d 
+d Requires: Stata 16+ with functioning Python Integration, pandas and numpy Python packages
+d 
+d Author: Kenneth Elpus
+d Support: provided as is with no support offered
+d
+d Distribution date: 13 May 2026
+d
+f gsheet.ado
+g gsheet.sthlp
