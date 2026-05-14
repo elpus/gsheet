@@ -108,7 +108,7 @@ The examples below use the public {bf:Gapminder Life Expectancy} dataset.
 {phang2}{cmd:. gsheet using "https://docs.google.com/spreadsheets/d/1cvaIhXYhDh70rnUfAtyAhI7hlXhrLSCnLWqhL6UnioE/edit", sheet("Data-world-by-year") firstrow clear}{p_end}
 
 {pstd}Import a specific range of cells from the country-level data sheet, convert names to lowercase, drop blank columns, and save the result:{p_end}
-{phang2}{cmd:. gsheet using "https://docs.google.com/spreadsheets/d/1cvaIhXYhDh70rnUfAtyAhI7hlXhrLSCnLWqhL6UnioE/edit", sheet("Data countries etc by year") cellrange(A1:F500) firstrow lowercase noblankcols save("life_expectancy.dta") clear} {p_end}
+{phang2}{cmd:. gsheet using "https://docs.google.com/spreadsheets/d/1cvaIhXYhDh70rnUfAtyAhI7hlXhrLSCnLWqhL6UnioE/edit", sheet("Data countries etc by year") cellrange(A1:F500) firstrow lowercase noblankcols save("life_expectancy.dta") clear}
 
 
 {marker author}{...}
