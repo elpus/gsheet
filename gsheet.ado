@@ -220,7 +220,7 @@ def _gsheet_import():
                 non_blank_count = s_str.notna().sum()
                 parsed_date_count = dt_series.notna().sum()
                 
-                # CRITICAL FIX: 100% of non-blank rows MUST parse as dates to be considered a date column
+                # 100% of non-blank rows MUST parse as dates to be considered a date column
                 if parsed_date_count > 0 and parsed_date_count == non_blank_count:
                     is_date = True
             except Exception:
@@ -233,7 +233,7 @@ def _gsheet_import():
                 Data.store(col, None, stata_dates.tolist())
                 Data.setVarFormat(col, '%tc')
             else:
-                # Fallback to string (Will now properly catch your grade ranges)
+                # Fallback to string
                 series = series.fillna('').astype(str)
                 byte_len = series.str.encode('utf-8').str.len().max()
                 max_bytes = max(1, int(byte_len)) if pd.notna(byte_len) else 1
